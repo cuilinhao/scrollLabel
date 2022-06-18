@@ -177,7 +177,7 @@ open class MarqueeLabel: UILabel, CAAnimationDelegate {
             }
         }
     }
-	
+    
     /**
      A boolean property that sets whether the `MarqueeLabel` should only begin a scroll when tapped.
      
@@ -1427,14 +1427,14 @@ open class MarqueeLabel: UILabel, CAAnimationDelegate {
         
         // Unpause sublabel position animations
         let labelPausedTime = sublabel.layer.timeOffset
-        sublabel.layer.speed = 7.0
+        sublabel.layer.speed = 1.0
         sublabel.layer.timeOffset = 0.0
         sublabel.layer.beginTime = 0.0
         sublabel.layer.beginTime = sublabel.layer.convertTime(CACurrentMediaTime(), from:nil) - labelPausedTime
         
         // Unpause gradient fade animation
         let gradientPauseTime = maskLayer?.timeOffset
-        maskLayer?.speed = 7.0
+        maskLayer?.speed = 1.0
         maskLayer?.timeOffset = 0.0
         maskLayer?.beginTime = 0.0
         maskLayer?.beginTime = maskLayer!.convertTime(CACurrentMediaTime(), from:nil) - gradientPauseTime!
@@ -1800,7 +1800,7 @@ public struct ScrollStep: MarqueeStep {
     /**
      The option set defining the edge fade state for this scroll step.
      
-     Possible options include `.leading` and `.trailing`, corresponding to the leading edge of the label scrolling (i.e. 
+     Possible options include `.leading` and `.trailing`, corresponding to the leading edge of the label scrolling (i.e.
      the direction of scroll) and trailing edge of the label.
     */
     public let edgeFades: EdgeFade
@@ -2031,4 +2031,5 @@ fileprivate extension CAMediaTimingFunction {
         return pointArray
     }
 }
+
 
