@@ -9,7 +9,6 @@ import UIKit
 //import MarqueeLabel
 
 class ViewController: UIViewController {
-
     let strings = ["When shall we three meet again in thunder, lightning, or in rain? When the hurlyburly's done, When the battle 's lost and won.",
                    "I have no spur to prick the sides of my intent, but only vaulting ambition, which o'erleaps itself, and falls on the other.",
                    "Double, double toil and trouble; Fire burn, and cauldron bubble.",
@@ -81,17 +80,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
           */
          
 
-         cell.label.text = "这是一个测试文本sdkhfjdfhjdshf时代俊峰海底世界时间飞逝绝地逢生多久手机防盗封建时代好世纪东方九十多斤手机风华爵士电话分机"
-         cell.label.type = .continuous
-         cell.label.speed = .duration(15.0)
-         cell.label.animationCurve = .easeInOut
-         cell.label.fadeLength = 0
-         cell.label.leadingBuffer = 0
-         cell.label.animationDelay = 0.0
-         
-         // Labelize normally, to improve scroll performance
-         //暂停横向滚动 true 开始横向滚动 false
-         cell.label.labelize = false
+//         cell.label.text = "这是一个测试文本sdkhfjdfhjdshf时代俊峰海底世界时间飞逝绝地逢生多久手机防盗封建时代好世纪东方九十多斤手机风华爵士电话分机"
+//         cell.label.type = .continuous
+//         cell.label.speed = .duration(15.0)
+//         cell.label.animationCurve = .easeInOut
+//         cell.label.fadeLength = 0
+//         cell.label.leadingBuffer = 0
+//         //暂停横向滚动 true 开始横向滚动 false
+//         cell.label.labelize = false
          
         return cell
     }
@@ -120,6 +116,16 @@ class TestCell: UITableViewCell {
             lab.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             lab.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
+        
+        lab.text = "这是一个测试文本sdkhfjdfhjdshf时代俊峰海底世界时间飞逝绝地逢生多久手机防盗封建时代好世纪东方九十多斤手机风华爵士电话分机"
+        lab.type = .continuous
+        lab.speed = .duration(15.0)
+        lab.animationCurve = .easeInOut
+        lab.fadeLength = 0
+        lab.leadingBuffer = 0
+        //暂停横向滚动 true 开始横向滚动 false
+        lab.labelize = false
+        
         return lab
     }()
     
