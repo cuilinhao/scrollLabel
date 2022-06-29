@@ -394,9 +394,12 @@ open class MarqueeLabel: UILabel, CAAnimationDelegate {
     
     
     /**
+     //标签在滚动完成时暂停的延迟时间（以秒为单位）。
      The length of delay in seconds that the label pauses at the completion of a scroll.
      */
-    @IBInspectable open var animationDelay: CGFloat = 1.0
+//    @IBInspectable open var animationDelay: CGFloat = 1.0
+    
+    @IBInspectable open var animationDelay: CGFloat = 0.0
     
     
     /** The read-only/computed duration of the scroll animation (not including delay).
@@ -1932,6 +1935,7 @@ fileprivate extension CAMediaTimingFunction {
         // Utilizes Newton's Method to solve for the parametric Bezier curve that is used by CAMediaAnimation.
         
         let controlPoints = self.controlPoints()
+        //let epsilon: CGFloat = 1.0 / (100.0 * CGFloat(duration))
         let epsilon: CGFloat = 1.0 / (100.0 * CGFloat(duration))
         
         // Find the t value that gives the position percentage we want

@@ -14,6 +14,8 @@
 		63EC0B0E285DCD5700B182DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63EC0B0D285DCD5700B182DE /* Assets.xcassets */; };
 		63EC0B11285DCD5700B182DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EC0B0F285DCD5700B182DE /* LaunchScreen.storyboard */; };
 		63EC0B19285DD25E00B182DE /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC0B18285DD25E00B182DE /* MarqueeLabel.swift */; };
+		63EC0B41286094C400B182DE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC0B40286094C400B182DE /* TestViewController.swift */; };
+		63EC0B43286094F200B182DE /* MNMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC0B42286094F200B182DE /* MNMarqueeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		63EC0B10285DCD5700B182DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63EC0B12285DCD5700B182DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63EC0B18285DD25E00B182DE /* MarqueeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeLabel.swift; sourceTree = "<group>"; };
+		63EC0B40286094C400B182DE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		63EC0B42286094F200B182DE /* MNMarqueeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNMarqueeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,11 @@
 		63EC0B03285DCD5600B182DE /* TestScroll */ = {
 			isa = PBXGroup;
 			children = (
+				63EC0B42286094F200B182DE /* MNMarqueeView.swift */,
 				63EC0B04285DCD5600B182DE /* AppDelegate.swift */,
 				63EC0B06285DCD5600B182DE /* SceneDelegate.swift */,
 				63EC0B08285DCD5600B182DE /* ViewController.swift */,
+				63EC0B40286094C400B182DE /* TestViewController.swift */,
 				63EC0B18285DD25E00B182DE /* MarqueeLabel.swift */,
 				63EC0B0A285DCD5600B182DE /* Main.storyboard */,
 				63EC0B0D285DCD5700B182DE /* Assets.xcassets */,
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EC0B43286094F200B182DE /* MNMarqueeView.swift in Sources */,
+				63EC0B41286094C400B182DE /* TestViewController.swift in Sources */,
 				63EC0B09285DCD5600B182DE /* ViewController.swift in Sources */,
 				63EC0B19285DD25E00B182DE /* MarqueeLabel.swift in Sources */,
 				63EC0B05285DCD5600B182DE /* AppDelegate.swift in Sources */,
@@ -301,6 +309,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +338,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
